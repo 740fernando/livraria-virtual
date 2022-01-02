@@ -33,3 +33,6 @@
 - Configurar o arquivo tomcat-users.xml : < role rolename="admin" />
 < user username="adm" password="123" roles="admin" />
 
+### Diagrama ER
+
+![diagram](https://github.com/740fernando/projeto-Livraria/blob/master/assets/er-diagram.JPG)
