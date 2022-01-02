@@ -1,7 +1,9 @@
 
-# Aplicação web em Java - Livraria Virtual -Incorporado o framework https://github.com/740fernando/projeto-WebF
+# Aplicação web em Java - Livraria Virtual
 
-### Como incluir o JAR https://github.com/740fernando/projeto-WebF
+### Como incorporar o Framework "WebF"  no projeto Livraria Virual.
+
+- Realizar um clone https://github.com/740fernando/projeto-WebF
 
 - Clicar com o botão direito no projeto "WebF"
 
