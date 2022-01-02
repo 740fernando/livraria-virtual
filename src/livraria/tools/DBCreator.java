@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
+import livraria.dao.LivroDAO;
+import livraria.dao.UsuarioDAO;
 import livraria.entity.Livro;
 import livraria.entity.Usuario;
 import webf.dao.DAOFactory;
@@ -13,7 +15,7 @@ import webf.util.HibernateUtil;
 
 public class DBCreator {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		// Insere os dados
 		insertData();
@@ -25,7 +27,7 @@ public class DBCreator {
 			HibernateUtil.beginTransaction();
 			
 			LivroDAO livroDAO = daoFactory.getDAO(LivroDAO.class);
-			UsuarioDAO usuarioDAO = daoFactory.getDAO(UsuarioDAO.CLASS);
+			UsuarioDAO usuarioDAO = daoFactory.getDAO(UsuarioDAO.class);
 			
 			Livro l = new Livro();
 			l.setTitulo("Use a Cabeça! - JAVA ");
