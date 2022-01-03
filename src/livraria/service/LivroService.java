@@ -26,6 +26,8 @@ public class LivroService extends Service {
 			if(livro.getId() == null) {
 				// se o ID for nulo, é porque o lviro ainda nao existe
 				livroDAO.save(livro);
+			}else {
+				livroDAO.update(livro);
 			}
 		} catch (DAOException e) {
 			throw new ServiceException(e);
@@ -70,6 +72,10 @@ public class LivroService extends Service {
 			LivroDAO livroDAO = daoFactory.getDAO(LivroDAO.class);
 			
 			if(!StringUtils.isEmpty(titulo)) {
+				//Pesquisa primeiro por título
+				livros.addAll(livroDAO.getLivrosByAutor(titulo));
+			}
+			if(!StringUtils.isEmpty(autor)) {
 				//Pesquisa primeiro por título
 				livros.addAll(livroDAO.getLivrosByAutor(autor));
 			}
