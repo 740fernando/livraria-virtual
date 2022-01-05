@@ -55,6 +55,7 @@ public class UsuarioService extends Service {
 				return null;
 			}
 			return usuario;
+			
 		}catch (DAOException e) {
 			throw new ServiceException(e);
 		}
