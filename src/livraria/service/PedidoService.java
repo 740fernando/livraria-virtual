@@ -73,6 +73,20 @@ public class PedidoService extends Service {
 	 * @return
 	 * @throws ServiceException
 	 */
+	public List<Pedido> getPedidosByUsuario(Usuario usuario) throws ServiceException{
+		try {
+			PedidoDAO pedidoDAO =daoFactory.getDAO(PedidoDAO.class);
+			return pedidoDAO.getPedidosByUsuario(usuario);
+		}catch(DAOException e) {
+			throw new ServiceException(e);
+		}
+	}
+	/**
+	 * Retorna pedidos com base no status
+	 * @param status
+	 * @return
+	 * @throws ServiceException
+	 */
 	public List<Pedido> getPedidosByStatus(int status) throws ServiceException{
 		try {
 			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
