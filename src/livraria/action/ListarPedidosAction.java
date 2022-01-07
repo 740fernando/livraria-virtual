@@ -6,6 +6,7 @@ import java.util.List;
 import livraria.entity.Pedido;
 import livraria.entity.Usuario;
 import livraria.service.PedidoService;
+import livraria.view.PedidoView;
 import webf.action.Action;
 
 public class ListarPedidosAction extends Action {
@@ -25,10 +26,10 @@ public class ListarPedidosAction extends Action {
 			PedidoService pedidoService = (PedidoService) serviceFactory.getService(PedidoService.class);
 			List<Pedido> pedidos = pedidoService.getPedidosByUsuario(usuario);
 			
-			List<PedidoView> pedidosView = new ArrayList();
+			List<PedidoView> pedidosView = new ArrayList<PedidoView>();
 			for(Pedido pedido : pedidos) {
 				PedidoView pedidoView = new PedidoView(pedido);
-				pedidoView.add(pedidoView);
+				pedidosView.add(pedidoView);
 			}
 			
 			getRequest().setAttribute("pedidos", pedidosView);
