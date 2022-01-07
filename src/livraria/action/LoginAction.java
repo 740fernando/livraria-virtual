@@ -25,7 +25,7 @@ public class LoginAction extends Action {
 		
 		//Se retornou null, o usuario nao foi encontrado ou nao pode ser autenticado
 		if(usuario==null) {
-			getRequest().setAttribute("erro", "Usuário/senha nao encontrado")
+			getRequest().setAttribute("erro", "Usuário/senha nao encontrado");
 			getRequest().setAttribute("email", email);
 			getRequest().setAttribute("senha", senha);
 			forward("login.jsp");
