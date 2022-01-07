@@ -21,7 +21,7 @@ public class PedidoService extends Service {
 	public static final int STATUS_CANCELADO= 3 ;
 
 	//Descricao dos status
-	public static final String STATUS_DESC_ANALISE= "Em análise" ;
+	public static final String STATUS_DESC_ANALISE= "Em anÃ¡lise" ;
 	public static final String STATUS_DESC_APROVADO = "Aprovado" ;
 	public static final String STATUS_DESC_CANCELADO= "Cancelado" ;
 	
@@ -36,7 +36,7 @@ public class PedidoService extends Service {
 		try {
 			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
 			
-			//Gera um número para o novo pedido 
+			//Gera um nÃºmero para o novo pedido 
 			String numPedido = gerarNumPedido();
 			
 			//Cria o objeto do pedido
@@ -61,24 +61,28 @@ public class PedidoService extends Service {
 				pedido.getLivros().add(livro);
 			}
 			
-			//Retorna o número do pedido recém gerado
+			//Retorna o nÃºmero do pedido recÃ©m gerado
 			return numPedido;
 		}catch (DAOException e) {
 			throw new ServiceException(e);
 		}
 	}
 	/**
-	 * Retorna todos os pedidos de um usuário 
+	 * Retorna todos os pedidos de um usuÃ¡rio 
 	 * @param usuario
 	 * @return
 	 * @throws ServiceException
 	 */
 	public List<Pedido> getPedidosByUsuario(Usuario usuario) throws ServiceException{
 		try {
+      
+			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
+			return pedidoDAO.getPedidosByUsuario(usuario);			
+		}catch (DAOException e) {
 			PedidoDAO pedidoDAO =daoFactory.getDAO(PedidoDAO.class);
-			return pedidoDAO.getPedidosByUsuario(usuario);
-		}catch(DAOException e) {
-			throw new ServiceException(e);
+			return pedidoDAO.getPedidosByUsuario(usuario);		
+    }catch(DAOException e) {
+      throw new ServiceException(e);
 		}
 	}
 	/**
@@ -105,7 +109,7 @@ public class PedidoService extends Service {
 		try {
 			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
 			
-			// O map mapeia um número de pedido a um status
+			// O map mapeia um nÃºmero de pedido a um status
 			for(Map.Entry<String, Integer>entry : statusMap.entrySet()) {
 				String numPedido = entry.getKey();
 				int status = entry.getValue();
@@ -113,7 +117,7 @@ public class PedidoService extends Service {
 				// Carrega o pedido
 				Pedido pedido = pedidoDAO.load(numPedido);
 				
-				// Verifica se houve mudança de status. Se houve, altera na base de dados
+				// Verifica se houve mudanÃ§a de status. Se houve, altera na base de dados
 				if(status != pedido.getStatus()) {
 					pedido.setStatus(status);
 				}
@@ -123,7 +127,7 @@ public class PedidoService extends Service {
 		}
 	}
 	/**
-	 * Gera um número de pedido
+	 * Gera um nÃºmero de pedido
 	 * @return
 	 * @throws ServiceException
 	 */
@@ -131,7 +135,7 @@ public class PedidoService extends Service {
 		try {
 			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
 			
-			//Obtém o maior sequencial de número de pedido cadastrado
+			//ObtÃ©m o maior sequencial de nÃºmero de pedido cadastrado
 			int max = pedidoDAO.getMaxNumPedido();
 			
 			// Incrementa em 1 e preenche com 0's a esquerda

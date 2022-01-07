@@ -1,6 +1,7 @@
 package livraria.action;
 
 import livraria.entity.Livro;
+import livraria.helper.Carrinho;
 import livraria.service.LivroService;
 import webf.action.Action;
 
@@ -22,7 +23,7 @@ public class CarrinhoAction extends Action {
 		String livroId = this.getRequest().getParameter("id");
 		if(op !=null && op.equals("inserir") && livroId!=null) {
 			Livro livro = livroService.getLivroById(Integer.parseInt(livroId));
-		}else if(op != null && op.equals("remover")&& livro!=null) {
+		}else if(op != null && op.equals("remover") && livroId !=null) {
 			carrinho.removerItem(Integer.parseInt(livroId));
 		}
 		
