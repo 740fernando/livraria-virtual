@@ -6,6 +6,7 @@ import java.util.List;
 
 import livraria.entity.Pedido;
 import livraria.service.PedidoService;
+import livraria.view.PedidoView;
 import webf.action.Action;
 
 public class GerenciarPedidosAction extends Action{
