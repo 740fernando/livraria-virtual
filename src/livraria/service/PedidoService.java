@@ -79,10 +79,7 @@ public class PedidoService extends Service {
 			PedidoDAO pedidoDAO = daoFactory.getDAO(PedidoDAO.class);
 			return pedidoDAO.getPedidosByUsuario(usuario);			
 		}catch (DAOException e) {
-			PedidoDAO pedidoDAO =daoFactory.getDAO(PedidoDAO.class);
-			return pedidoDAO.getPedidosByUsuario(usuario);		
-    }catch(DAOException e) {
-      throw new ServiceException(e);
+		      throw new ServiceException(e);
 		}
 	}
 	/**
