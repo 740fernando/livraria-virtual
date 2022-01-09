@@ -1,0 +1,160 @@
+
+p{
+	line-height: 170%;
+	margin-bottom: 10px;
+	color: #163000;	
+}
+
+h1 {
+	font-size: 2.8em;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 49px 0 0 42px;
+	background: url('.../img/h1-bg-flame.png') no-repeat 43px;
+}
+
+h1 a:link, h1 a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: left;
+	margin: 3px 0 0 2px;
+}
+
+h3 {
+	font-size: 1.4em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #295B00;
+	letter-spacing: 1px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #295B00;
+	margin-bottom: 7px;
+}
+
+address {
+	font-style: normal;
+	line-height: 180%;
+	margin-left: 7px;
+}
+
+/* Images */
+
+img.float{
+	float: left;
+	border: 1px solid #295B00;
+	margin: 0.5em 0.8em 0.5em 0;
+}
+
+
+/* Header */
+
+#header {
+	height: 198px;
+	position: relative;
+	background: #285800 url('../img/hd-bg.gif') repeat-x 0 0;
+}
+
+#header-in {
+	width: 900px;
+	height: 198px;
+	position: relative;
+	margin: 0 auto;
+}
+
+ul#navigation {
+	float: right;
+	margin: 8px 1px 0 0;
+	display: inline;
+	color: #FFFFFF; 
+}
+
+ul#navigation li {
+	float: left;
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+ul#navigation li a, ul#navigation li a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: normal; 
+}
+
+ul#navigation li a:hover {
+	text-decoration: underline;
+}
+
+li#house {
+	background: url('../img/house.gif') no-repeat 0 1 px;
+	padding-left: 24px;
+}
+
+li#house a {
+	margin-right: 16px;
+}
+
+li#sitemap {
+	background: url('../img/sitemap.gif') no-repeat 0 2px;
+	padding-left: 24px;
+	margin-left:16px;
+}
+
+li#sitemap a {
+	margin-right: 16px;
+}
+
+li#envelope {
+	background: url('../img/envelope.gif') no-repeat 0 2px;
+	padding-left: 23px;
+	margin-left: 16px; 
+}
+
+/* Menu */
+
+#menu-box {
+	background: #4A4A4A url('../img/menu-bg.gif') repeat-x 0 0;
+	border-bottom: 3px solid black;
+}
+
+#menu {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#menu li{
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+}
+
+#menu li.first a {
+	margin-left: 1.6em;
+	display: inline;
+}
+
+#menu li a{
+	float: left;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.1em;
+	display: block;
+	padding: 0.9em 1.4em 0.7em 1.4em;
+}
+
+#menu li a:hover, #menu li a.ac:active{
+	color: #FFFFFF;
+	background-color: #DFF300;
+	font-weight: bold;
+	font-size: 1.1em;
+}
