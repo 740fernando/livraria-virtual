@@ -3,8 +3,8 @@
 
 <h3>CADASTRAR USUÁRIO</h3>
 
-<c:if teste="${erros != null}">
-	<c: forEach var="erro" items="${erros}">
+<c:if test="${erros != null}">
+	<c:forEach var="erro" items="${erros}">
 		<span class="erro">${erro}</span><br>
 	</c:forEach>
 </c:if>
