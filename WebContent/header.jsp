@@ -20,6 +20,7 @@
 
 <tittle>Livraria Virtual</tittle>
 </head>
+
 <body>
 	
 	<!-- Header -->
