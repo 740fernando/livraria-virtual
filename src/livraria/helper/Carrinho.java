@@ -43,5 +43,28 @@ public class Carrinho {
 	public Set<Livro> getItens(){return livros;}
 	
 	public Set<Livro> getLivros(){return livros;}
-
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((livros == null) ? 0 : livros.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Carrinho other = (Carrinho) obj;
+		if (livros == null) {
+			if (other.livros != null)
+				return false;
+		} else if (!livros.equals(other.livros))
+			return false;
+		return true;
+	}
 }
