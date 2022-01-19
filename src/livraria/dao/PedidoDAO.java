@@ -20,7 +20,7 @@ public class PedidoDAO extends DAO<Pedido> {
 	 * @throws DAOException
 	 */
 	public int getMaxNumPedido() throws DAOException{
-		List<String> result = (List<String>) list("SELECT MAX(p.id) FROM Pedido p");
+		List<String> result = (List<String>) list("SELECT MAX(p.id) FROM Pedido p",String.class);
 		
 		String max = result.get(0);
 		

@@ -1,9 +1,5 @@
 package livraria.tools;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 import livraria.dao.LivroDAO;
 import livraria.dao.UsuarioDAO;

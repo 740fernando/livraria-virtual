@@ -45,10 +45,10 @@
 		<ul id="menu">
 				<li class="first">
 				<c:if test="${menuAtivo == 'livros' }">
-					<a href="<%=request.getContextPath()%>/Pesquisarlivros.action" class="active">Livros</a>
+					<a href="<%=request.getContextPath()%>/PesquisarLivros.action" class="active">Livros</a>
 				</c:if>
 				<c:if test="${menuAtivo != 'livros' }">
-					<a href="<%=request.getContextPath()%>/Pesquisarlivros.action" class="active">Livros</a>
+					<a href="<%=request.getContextPath()%>/PesquisarLivros.action" class="active">Livros</a>
 				</c:if>
 				</li>
 				
