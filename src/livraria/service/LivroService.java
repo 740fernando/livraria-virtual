@@ -79,6 +79,10 @@ public class LivroService extends Service {
 				//Pesquisa primeiro por título
 				livros.addAll(livroDAO.getLivrosByAutor(autor));
 			}
+			if(StringUtils.isEmpty(autor) && StringUtils.isEmpty(titulo)) {
+				//Pesquisa por todos
+				livros.addAll(livroDAO.getTodosLivros());
+			}
 			return new ArrayList<Livro>(livros);
 		} catch (DAOException e ) {
 			throw new ServiceException(e);

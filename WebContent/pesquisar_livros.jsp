@@ -27,7 +27,7 @@
 	<span class="livro_autor">${livro.autor}</span><br>
 	<span class="livro_info">Editora ${livro.editora},${livro.ano} .</span><br>
 	<span class="livro_preco"><fmt:formatNumber  value="${livro.preco}" type="currency"/></span><br>
-    <a href="Carrinho.action?op=inserir&id=${livros.id}">Adicionar este item ao carrinho</span><br>
+    <a href="Carrinho.action?op=inserir&id=${livro.id}">Adicionar este item ao carrinho</span><br>
 </c:forEach>
 
 <jsp:include page="footer.jsp" />

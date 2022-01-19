@@ -91,3 +91,4 @@ local.properties
 # PDT-specific
 .buildpath
 
+/.apt_src/
