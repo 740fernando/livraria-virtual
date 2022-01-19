@@ -37,19 +37,7 @@ public class LivroDAO extends DAO<Livro> {
 		Query q = query("FROM Livro l WHERE upper(l.autor) like :autor order by l.autor");
 		q.setParameter("autor", "%" + autor.toUpperCase()+"%");
 		return q.list();
-	}
-	/**
-	 * Obtém todos os livros, caso o titulo e o auto == Empty
-	 *
-	 *@param autor,titulo
-	 *@return
-	 *@throws DAOException
-	 */
-	public List<Livro> getTodosLivros() throws DAOException{
-		Query q = query("FROM Livro l");
-		return q.list();
-	}
-	
+	}	
 	/**
 	 * Obtém o livro com determinado ID
 	 *
