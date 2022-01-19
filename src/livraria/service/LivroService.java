@@ -73,7 +73,7 @@ public class LivroService extends Service {
 			
 			if(!StringUtils.isEmpty(titulo)) {
 				//Pesquisa primeiro por título
-				livros.addAll(livroDAO.getLivrosByAutor(titulo));
+				livros.addAll(livroDAO.getLivrosByTitulo(titulo));
 			}
 			if(!StringUtils.isEmpty(autor)) {
 				//Pesquisa primeiro por título
