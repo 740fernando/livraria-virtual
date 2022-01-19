@@ -9,7 +9,7 @@
 <form action="PesquisarLivros.action">
 	<table>
 		<tr>
-			<td>Titulo : </td>
+			<td>Título : </td>
 			<td><input type=text" name="titulo" size="30" /></td>
 		</tr>
 		<tr>
@@ -27,7 +27,7 @@
 	<span class="livro_autor">${livro.autor}</span><br>
 	<span class="livro_info">Editora ${livro.editora},${livro.ano} .</span><br>
 	<span class="livro_preco"><fmt:formatNumber  value="${livro.preco}" type="currency"/></span><br>
-    <a href="Carrinho.action?op=inserir&id=${livro.id}">Adicionar este item ao carrinho</span><br>
+    <a href="Carrinho.action?op=inserir&id=${livro.id}">Adicionar este item ao carrinho</a></span><br><br>
 </c:forEach>
 
 <jsp:include page="footer.jsp" />
