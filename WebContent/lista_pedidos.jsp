@@ -23,9 +23,9 @@
 			<c:forEach var="p" items="${pedidos}">
 				<tr>
 					<td>${p.id}</td>
-					<td><fmt:formatDate value="${p.data}" patter"dd/MM/yyyy HH:mm"/></td>
+					<td><fmt:formatDate value="${p.data}" pattern="dd/MM/yyyy HH:mm" /></td>
 					<td>${p.status}</td>
-					<td>fmt:formatNumber value="${p.valor}" type="currency" /></td>
+					<td><fmt:formatNumber value="${p.valor}" type="currency"/></td>
 					<td>
 					<c:forEach	var="l" items="${p.livros}">
 						- ${l.titulo}<br>
