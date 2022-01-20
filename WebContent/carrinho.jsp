@@ -7,7 +7,7 @@
 <h3>CARRINHO DE COMPRAS</h3>
 
 <c:if test="${carrinho.itens.size() == 0}">
-	<br><h4>Seu carrinho est√° vazio</h4>
+	<br><h4>Seu carrinho est· vazio</h4>
 </c:if>
 
 <c:if test="${carrinho.itens.size() > 0}">

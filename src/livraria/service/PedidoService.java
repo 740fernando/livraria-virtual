@@ -21,7 +21,7 @@ public class PedidoService extends Service {
 	public static final int STATUS_CANCELADO= 3 ;
 
 	//Descricao dos status
-	public static final String STATUS_DESC_ANALISE= "Em an√°lise" ;
+	public static final String STATUS_DESC_ANALISE= "Em an·lise" ;
 	public static final String STATUS_DESC_APROVADO = "Aprovado" ;
 	public static final String STATUS_DESC_CANCELADO= "Cancelado" ;
 	
