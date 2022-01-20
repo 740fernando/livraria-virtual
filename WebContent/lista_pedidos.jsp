@@ -10,10 +10,6 @@
 	<br><h4>Efetue o login para poder consultar seus pedidos!</h4>
 </c:if>
 
-<c:if test="${usuario == null }">
-	<br><h4>Efetue o login para poder consultar seus pedidos!</h4>
-</c:if>
-
 <c:if test="${usuario != null }">
 	<c:if test="${pedidos.size() == 0 }">
 		<br><h4>Voce não possui pedidos!</h4>
