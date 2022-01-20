@@ -9,6 +9,7 @@ public class LoginAction extends Action {
 	
 	@Override
 	public void process() throws Exception{
+		
 		String email = getRequest().getParameter("email").trim();
 		String senha = getRequest().getParameter("senha").trim();
 		

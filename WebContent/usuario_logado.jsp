@@ -2,4 +2,4 @@
 
 <h4>Bem-vindo, ${usuario.nome} !</h4>
 
-<jsp:inclue page="footer.jsp" />
+<jsp:include page="footer.jsp" />
