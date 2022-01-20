@@ -36,3 +36,71 @@
 ### Diagrama ER
 
 ![diagram](https://github.com/740fernando/projeto-Livraria/blob/master/assets/er-diagram.JPG)
+
+
+### Telas de usuário
+
+<br>
+
+<P><strong> Cadastro usuário </strong> </p>
+
+  
+![Cadastro](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Cadastro.JPG)
+
+
+<br>
+
+<P><strong> Carrinho  </strong> </p>
+
+  
+![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/LivroAdicionado.JPG)
+
+<br>
+
+  
+![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/ListaDepedidos.JPG)
+
+
+<br>
+
+
+
+
+![carrinho](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/carrinho.JPG)
+
+
+<br>
+
+<P><strong> Pedidos  </strong> </p>
+  
+![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/ListaDepedidosComDados.JPG)
+
+<br>
+
+![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Pedidos.JPG)
+
+
+<br>
+
+<P><strong> Pesquisa de livros  </strong> </p>
+
+  
+![Livros](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Livros.JPG)
+
+
+<br>
+
+
+  
+![LivrosPesquisados](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/LivrosPesquisados.JPG)
+
+
+<br>
+
+<P><strong> Login  </strong> </p>
+
+  
+![login](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/login.JPG)
+
+
+<br>
