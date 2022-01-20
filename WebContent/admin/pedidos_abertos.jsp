@@ -10,7 +10,7 @@
 <c:if test="${pedidos.size() == 0 }">
 	<br><h4>Não existem pedidos para processar . </h4>
 </c:if>
-<c:if test="${pedidos.size() > 0">
+<c:if test="${pedidos.size() > 0}">
 	<form action="ProcessarPedidos.action" method="post">
 		<table>
 			<c:forEach var="p" items="${pedidos}">
@@ -21,8 +21,8 @@
 					<td>
 						<select name="status_${p.id}">
 							<option value="">Nao processar</option>
-							<option value="<%=PedidoService.STATUS_APROVADO %>"><%= PedidoService.STATUS_DESC_APROVADO %></option>
-							<option value="<%=PedidoService.STATUS_CANCELADO %>"><%= PedidoService.STATUS_DESC_CANCELADO %></option>			
+							<option value="<%= PedidoService.STATUS_APROVADO %>"><%= PedidoService.STATUS_DESC_APROVADO %></option>
+							<option value="<%= PedidoService.STATUS_CANCELADO %>"><%= PedidoService.STATUS_DESC_CANCELADO %></option>			
 						</select>
 					</td>
 				</tr>
@@ -33,3 +33,5 @@
 		</table>
 	</form>
 </c:if>
+
+<jsp:include page="footer.jsp" />

@@ -18,7 +18,7 @@ public class GerenciarPedidosAction extends Action{
 	public void process() throws Exception {
 		getSession().setAttribute("menuAtivo", "pedidos");
 		PedidoService pedidoService = (PedidoService)serviceFactory.getService(PedidoService.class);
-		List<Pedido> pedidos = pedidoService.getPedidosByStatus(1);
+		List<Pedido> pedidos = pedidoService.getPedidosByStatus(PedidoService.STATUS_ANALISE);
 		List<PedidoView> pedidosView = new ArrayList();
 		Iterator var5 = pedidos.iterator();
 		

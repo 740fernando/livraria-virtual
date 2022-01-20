@@ -1,3 +1,3 @@
 <SCRIPT>
-window.location = "<%=request.getContextPath()%>/PesquisarLivros.action";
+	window.location = "<%=request.getContextPath()%>/PesquisarLivros.action";
 </SCRIPT>

@@ -50,6 +50,7 @@
 				<c:if test="${menuAtivo != 'livros' }">
 					<a href="<%=request.getContextPath()%>/admin/ListarLivros.action">Livros</a>
 				</c:if>
+				</li>
 				
 				<c:if test="${menuAtivo == 'pedidos' }">
 					<li><a href="<%=request.getContextPath()%>/admin/GerenciarPedidos.action" class="active">Pedidos</a></li>
