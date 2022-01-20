@@ -3,15 +3,15 @@
 
 <h3>Lista de Livros</h3>
 
-<c:if test="$(livros.size()==0)}">
+<c:if test="${livros.size()==0}">
 	<br><h4>Nao existem livros cadastrados !</h4><br>
 </c:if>
-<c:if test="$(livros.size()>0)}">
+<c:if test="${livros.size() >0}">
 	<table>
 		<c:forEach var="l" items="${livros}">
 			<tr>
-				<td>{l.titulo}</td>
-				<td>{l.autor}</td>
+				<td>${l.titulo}</td>
+				<td>${l.autor}</td>
 				<td><A href="LivroForm.action?id=${l.id}">Alterar</A> | <A href="ExcluirLivro.action?id=${l.id}">Excluir</A></td>
 			</tr>
 		</c:forEach>

@@ -53,7 +53,7 @@ public class LivroService extends Service {
 			Livro livro = livroDAO.load(livroId);
 			livroDAO.delete(livro);
 		}catch(DAOException e) {
-			throw new ServiceException();
+			throw new ServiceException(e);
 		}
 	}
 	/**
