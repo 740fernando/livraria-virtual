@@ -15,10 +15,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- CSS -->
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/style.css" type="text/css" media="screen, projection, tv" />
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/style-print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style-print.css" type="text/css" media="print" />
 
-<tittle>Livraria Virtual</tittle>
+<title>Livraria Virtual</title>
 </head>
 
 <body>
@@ -30,11 +30,11 @@
 		<!-- Your website name -->
 		<h1><a href="#">Livraria Virtual</a></h1>
 		<!--  Your website name end -->
-		
-		<!--  Your slogan -->
-		<h2>Conhecimento é poder</h2>
-		<!--  Your slogan end -->
-		</div>
+			
+			<!--  Your slogan -->
+			<h2>Conhecimento é poder</h2>
+			<!--  Your slogan end -->
+			</div>
 	</div>
 	<!-- Header end -->
 	
@@ -76,17 +76,18 @@
 	</div>
 	</c:if>
 	<!-- Menu end -->
-
+	
 <table class=tableB cellspacing=0 cellpadding=0 border=0 width=100% height=1%>
-	<tr class=thB>
-	<td class=thb valign=top height=1%>
+<tr class=thB>
+<td class=thB valign=top height=1%>
 	
-	<hr class="noscreen" />
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
 	
-	<div id="skip-menu"></div>
-		<div id="content">
-		
-		<!-- Content box whti white background and gray border -->
+	<div id="content">
+	
+		<!-- Content box with white background and gray border -->
 		<div id="content-box">
 		
 			<!-- Left column -->
