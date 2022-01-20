@@ -24,7 +24,8 @@ public class CadastrarUsuarioAction extends Action {
 		
 		if(email== null) {
 			// Se o parametro 'email' nao existe é porque o usuário abriu a tela para preencher o formulário
-			this.forward("cadastrar_usuario.jsp");
+			forward("cadastrar_usuario.jsp");
+			return;
 		}
 		
 		// Extrai os dados digitados no formulário
@@ -41,25 +42,29 @@ public class CadastrarUsuarioAction extends Action {
 		// Caso tenha ocorrido algum erro de validacao, coloca as informacoes novamente na request ( para permitir que o
 		// formulario exiba os campos preenchidos) e volta para a mesma tela.
 		if(existemErros()) {
-			this.definirValores(email, nome, senha1, senha2);
-			this.forward("cadastrar_usuario.jsp");
-		}else {
-			// Cria o objeto que representa o usuario
-			Usuario usuario = new Usuario();
-			usuario.setEmail(email);
-			usuario.setNome(nome);
-			usuario.setSenha(senha1);
-			UsuarioService usuarioService = (UsuarioService)this.serviceFactory.getService(UsuarioService.class);
-			boolean sucesso = usuarioService.salvar(usuario);
+			definirValores(email, nome, senha1, senha2);
+			forward("cadastrar_usuario.jsp");
+			return;
+		}
+		// Cria o objeto que representa o usuario
+		Usuario usuario = new Usuario();
+		usuario.setEmail(email);
+		usuario.setNome(nome);
+		usuario.setSenha(senha1);
+		
+		UsuarioService usuarioService = (UsuarioService)this.serviceFactory.getService(UsuarioService.class);
+		
+		// Grava o usuário
+		boolean sucesso = usuarioService.salvar(usuario);
 			if(!sucesso) {
-				this.adicionarErro("Usupario já existe");
-				this.definirValores(email, nome, senha1, senha2);
-				this.forward("cadastrar_usuario.jsp");
-			}else {
-				this.redirect("usuario_cadastrado.jsp");
+				adicionarErro("Usupario já existe");
+				definirValores(email, nome, senha1, senha2);
+				forward("cadastrar_usuario.jsp");
 			}
-		}		
-	}
+			redirect("usuario_cadastrado.jsp");
+		}
+		
+
 
 	
 	/**

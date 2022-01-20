@@ -27,7 +27,7 @@ public class UsuarioDAO extends DAO<Usuario> {
 	 *@throws DAOException
 	 */
 	public boolean existeUsuario(String email) throws DAOException {
-		Query q = query("SELECT COUNT(*) FROM Usuario u WHERE upper(u.email) - :email");
+		Query<Long> q = query("SELECT COUNT(*) FROM Usuario u WHERE upper(u.email) = :email",Long.class);
 		q.setParameter("email", email.toUpperCase());
 		List<Long> results = q.list();
 		long count = results.get(0);
