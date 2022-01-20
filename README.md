@@ -42,7 +42,7 @@
 
 <br>
 
-<P><strong> Cadastro usuário </strong> </p>
+<h4><strong> Cadastro usuário </strong> </h4>
 
   
 ![Cadastro](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Cadastro.JPG)
@@ -50,7 +50,7 @@
 
 <br>
 
-<P><strong> Carrinho  </strong> </p>
+<h4><strong> Carrinho  </strong> </h4>
 
   
 ![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/LivroAdicionado.JPG)
@@ -71,7 +71,7 @@
 
 <br>
 
-<P><strong> Pedidos  </strong> </p>
+<h4><strong> Pedidos  </strong> </h4>
   
 ![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/ListaDepedidosComDados.JPG)
 
@@ -82,7 +82,7 @@
 
 <br>
 
-<P><strong> Pesquisa de livros  </strong> </p>
+<h4><strong> Pesquisa de livros  </strong> </h4>
 
   
 ![Livros](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Livros.JPG)
@@ -97,7 +97,7 @@
 
 <br>
 
-<P><strong> Login  </strong> </p>
+<h4><strong> Login  </strong> </h4>
 
   
 ![login](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/login.JPG)
