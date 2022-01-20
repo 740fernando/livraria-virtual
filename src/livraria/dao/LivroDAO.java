@@ -67,7 +67,7 @@ public class LivroDAO extends DAO<Livro> {
 	 *@throws DAOException
 	 */
 	public boolean isLivroEmPedido(Integer livroId) throws DAOException {
-		Query q = query("SELECT COUNT(*) FROM Pedido p INNER JOIN p.livros AS l WHERE l.id = :livroId");
+		Query q = query("SELECT COUNT(*) FROM Pedido p INNER JOIN p.livros AS l WHERE l.id = :livroId",Long.class);
 		q.setParameter("livroId", livroId);
 		Long count = (Long) q.uniqueResult();
 		return count > 0; 

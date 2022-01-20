@@ -31,6 +31,6 @@ public class LivroFormAction extends Action {
 			getRequest().setAttribute("ano", livro.getAno());
 			getRequest().setAttribute("preco", livro.getPreco());
 		}
-		forward("livro,jsp");
+		forward("livro.jsp");
 	}	
 }
