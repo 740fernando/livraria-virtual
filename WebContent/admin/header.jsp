@@ -45,17 +45,17 @@
 			<ul id="menu">
 				<li class="first">
 				<c:if test="${menuAtivo == 'livros' }">
-					<a href="request.getContext()%>/admin/ListarLivros.action" class="active">Livros</a>
+					<a href="<%=request.getContextPath()%>/admin/ListarLivros.action" class="active">Livros</a>
 				</c:if>
 				<c:if test="${menuAtivo != 'livros' }">
-					<a href="request.getContext()%>/admin/ListarLivros.action">Livros</a>
+					<a href="<%=request.getContextPath()%>/admin/ListarLivros.action">Livros</a>
 				</c:if>
 				
 				<c:if test="${menuAtivo == 'pedidos' }">
-					<li><a href="request.getContext()%>/admin/GerenciarPedidos.action" class="active">Pedidos</a></li>
+					<li><a href="<%=request.getContextPath()%>/admin/GerenciarPedidos.action" class="active">Pedidos</a></li>
 				</c:if>
 					<c:if test="${menuAtivo != 'pedidos' }">
-					<li><a href="request.getContext()%>/admin/GerenciarPedidos.action">Pedidos</a></li>
+					<li><a href="<%=request.getContextPath()%>/admin/GerenciarPedidos.action">Pedidos</a></li>
 				</c:if>
 
 			</ul>
