@@ -1,10 +1,9 @@
-----------------------------------------------------------------------------
 
-# Aplicação web em Java - Livraria Virtual
-
+<h1 align="center"> Aplicação web em Java - Livraria Virtual </h1>
 
 
-### Como incorporar o Framework "WebF"  no projeto Livraria Virual.
+
+<h2 align="center">Como incorporar o Framework "WebF"  no projeto Livraria Virual.</h2>
 
 
 
@@ -26,9 +25,8 @@
 
 ----------------------------------------------------------------------------
 
-### Configurar o Apache Tomcat para reconhecer o perfil administrador
+<h2 align="center"> Configurar o Apache Tomcat para reconhecer o perfil administrador </h2>
 
-----------------------------------------------------------------------------
 
 
 - Detalhe importante : Estou utilizando as funcionalidade do JAVA EE 6 
@@ -44,32 +42,36 @@
 
 ----------------------------------------------------------------------------
 
-### Diagrama ER
+<h2 align="center">Diagrama ER</h2>
 
+
+<p align="center">
+
+<img src="https://github.com/740fernando/projeto-Livraria/blob/master/assets/er-diagram.JPG">
+
+ </p>
+ 
 ----------------------------------------------------------------------------
 
+<h2 align="center"> Telas de usuário </h2>
 
-![diagram](https://github.com/740fernando/projeto-Livraria/blob/master/assets/er-diagram.JPG)
-
-----------------------------------------------------------------------------
-
-### Telas de usuário
-----------------------------------------------------------------------------
 
 <br>
 
-<h4><strong> Cadastro usuário </strong> </h4>
+<h3 align="center"><strong> Cadastro usuário </strong> </h3>
 
-  
+<br>
+
 ![Cadastro](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Cadastro.JPG)
 
 ----------------------------------------------------------------------------
 <br>
 
-<h4><strong> Carrinho  </strong> </h4>
+<h3 align="center"><strong> Carrinho  </strong> </h3>
 
   
 ![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/LivroAdicionado.JPG)
+
 
 <br>
 
@@ -81,7 +83,6 @@
 
 
 
-
 ![carrinho](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/carrinho.JPG)
 
 
@@ -89,7 +90,9 @@
 
 ----------------------------------------------------------------------------
 
-<h4><strong> Pedidos  </strong> </h4>
+<h3 align="center"><strong> Pedidos  </strong> </h3>
+
+<br>
   
 ![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/ListaDepedidosComDados.JPG)
 
@@ -102,8 +105,9 @@
 
 ----------------------------------------------------------------------------
 
-<h4><strong> Pesquisa de livros  </strong> </h4>
+<h3 align="center"><strong> Pesquisa de livros  </strong> </h3>
 
+<br>
   
 ![Livros](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Livros.JPG)
 
