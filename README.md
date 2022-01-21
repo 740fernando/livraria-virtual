@@ -53,7 +53,7 @@
  
 ----------------------------------------------------------------------------
 
-<h2 align="center"> Telas de usuário </h2>
+<h2 align="center"> Telas "user" </h2>
 
 
 <br>
@@ -123,12 +123,54 @@
 
 ----------------------------------------------------------------------------
 
-<h4><strong> Login  </strong> </h4>
+<h3 align="center"><strong> Login  </strong> </h3>
 
-  
+<br>
+
 ![login](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/login.JPG)
 
 
 <br>
 
 ----------------------------------------------------------------------------
+
+<h2 align="center"> Telas "admin" </h2>
+
+
+<h3 align="center><strong>Home</strong></h3>
+
+<br>
+
+![Home](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/home.JPG)         
+           
+----------------------------------------------------------------------------
+
+<h3 align="center"><strong> Livros  </strong> </h3>
+
+
+![AlterarLivros](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/AlterarLivros.JPG)
+
+<br>
+
+![CadastrarLivros](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/CadastrarLivros.JPG)
+
+<br>
+
+![ExcluirLivros](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/ExcluirLivros.JPG)
+
+<br>
+
+![ExibirLivros](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/Livros.JPG)
+
+----------------------------------------------------------------------------
+
+<h3 align="center"><strong> Pedidos  </strong> </h3>
+
+<br>
+
+![Pedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/admin/Pedidos.JPG)
+
+<br>
+             
+
+
