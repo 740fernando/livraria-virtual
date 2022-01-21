@@ -1,7 +1,12 @@
+----------------------------------------------------------------------------
 
 # Aplicação web em Java - Livraria Virtual
 
+
+
 ### Como incorporar o Framework "WebF"  no projeto Livraria Virual.
+
+
 
 - Realizar um clone https://github.com/740fernando/projeto-WebF
 
@@ -19,8 +24,12 @@
 
 - Em "Select the export destination" -> Livraria/webContent/WEB-INF/web.jar
 
+----------------------------------------------------------------------------
 
 ### Configurar o Apache Tomcat para reconhecer o perfil administrador
+
+----------------------------------------------------------------------------
+
 
 - Detalhe importante : Estou utilizando as funcionalidade do JAVA EE 6 
 
@@ -33,12 +42,19 @@
 - Configurar o arquivo tomcat-users.xml : < role rolename="admin" />
 < user username="adm" password="123" roles="admin" />
 
+----------------------------------------------------------------------------
+
 ### Diagrama ER
+
+----------------------------------------------------------------------------
+
 
 ![diagram](https://github.com/740fernando/projeto-Livraria/blob/master/assets/er-diagram.JPG)
 
+----------------------------------------------------------------------------
 
 ### Telas de usuário
+----------------------------------------------------------------------------
 
 <br>
 
@@ -47,7 +63,7 @@
   
 ![Cadastro](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/Cadastro.JPG)
 
-
+----------------------------------------------------------------------------
 <br>
 
 <h4><strong> Carrinho  </strong> </h4>
@@ -71,6 +87,8 @@
 
 <br>
 
+----------------------------------------------------------------------------
+
 <h4><strong> Pedidos  </strong> </h4>
   
 ![ListaDepedidos](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/ListaDepedidosComDados.JPG)
@@ -81,6 +99,8 @@
 
 
 <br>
+
+----------------------------------------------------------------------------
 
 <h4><strong> Pesquisa de livros  </strong> </h4>
 
@@ -95,7 +115,9 @@
 ![LivrosPesquisados](https://github.com/740fernando/livraria-virtual/blob/master/assets/usuario/LivrosPesquisados.JPG)
 
 
-<br>
+
+
+----------------------------------------------------------------------------
 
 <h4><strong> Login  </strong> </h4>
 
@@ -104,3 +126,5 @@
 
 
 <br>
+
+----------------------------------------------------------------------------
