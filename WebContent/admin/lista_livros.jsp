@@ -12,7 +12,7 @@
 			<tr>
 				<td>${l.titulo}</td>
 				<td>${l.autor}</td>
-				<td><A href="LivroForm.action?id=${l.id}">Alterar</A> | <A href="ExcluirLivro.action?id=${l.id}">Excluir</A></td>
+				<td><A href="LivroForm.action?id=${l.id}">Alterar</A> | <A href="ExcluirLivro.action?id=${l.id}" onclick="return confirm('Deseja realmente excluir ${l.titulo}?');">Excluir</A></td>
 			</tr>
 		</c:forEach>
 	</table>
