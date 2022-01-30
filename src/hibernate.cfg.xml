@@ -25,9 +25,9 @@
 		<!-- <property name="hbm2ddl.auto">create</property> -->
 		
 		
-		<mapping resource="livraria/entity/Usuario.hbm.xml"/>
-		<mapping resource="livraria/entity/Livro.hbm.xml"/>
-		<mapping resource="livraria/entity/Pedido.hbm.xml"/>
+		<mapping resource="livraria/hbm/Usuario.hbm.xml"/>
+		<mapping resource="livraria/hbm/Livro.hbm.xml"/>
+		<mapping resource="livraria/hbm/Pedido.hbm.xml"/>
 		
 	</session-factory>
 </hibernate-configuration>
