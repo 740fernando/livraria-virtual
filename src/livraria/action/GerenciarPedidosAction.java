@@ -11,8 +11,6 @@ import webf.action.Action;
 
 public class GerenciarPedidosAction extends Action{
 	
-	public GerenciarPedidosAction() {
-	}
 
 	@Override
 	public void process() throws Exception {
